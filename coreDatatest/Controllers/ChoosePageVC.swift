@@ -9,21 +9,49 @@ import UIKit
 
 class ChoosePageVC: UIViewController {
 
+    
+    static var ID = String(describing: ChoosePageVC.self)
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+       
+        
+        
+         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    @IBAction func addProduct(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: AddProductVC.ID) as! AddProductVC
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
-    */
-
+    
+    
+    
+    
+    @IBAction func goHome(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: SearchForMeal.ID) as! SearchForMeal
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    
+    @IBAction func logOutBtn(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: IntroVC.ID) as! IntroVC
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        UserDefaults.standard.set(false, forKey: "loged")
+        
+        
+    }
+    
 }

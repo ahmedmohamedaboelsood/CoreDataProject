@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct Product{
+    
+    var image : Data?
+    var name : String?
+    var info : String?
+    var meal : String?
+    var plate : String?
+    var price : Double?
+    
+}
+
+

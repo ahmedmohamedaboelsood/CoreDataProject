@@ -9,4 +9,8 @@ import UIKit
 
 class itemsCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var itemsLbl: UILabel!
+    
+    static var ID = String(describing: itemsCollectionViewCell.self)
+    
 }
