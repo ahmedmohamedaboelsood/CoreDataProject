@@ -1,0 +1,6 @@
+framework module Pods_WareHouseApp {
+  umbrella header "Pods-WareHouseApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

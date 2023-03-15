@@ -3,7 +3,6 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -13,7 +12,7 @@
         <!--IntroVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="IntroVC" id="BYZ-38-t0r" customClass="IntroVC" customModule="coreDatatest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroVC" id="BYZ-38-t0r" customClass="IntroVC" customModule="WareHouseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,10 +29,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aF-zg-Pf9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover And Add Your Products Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aF-zg-Pf9">
                                 <rect key="frame" x="20" y="398" width="374" height="95.666666666666686"/>
-                                <string key="text">Discover Your  
-Dreem Job Here</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -105,7 +102,7 @@ Dreem Job Here</string>
         <!--Login And Sign UpVC-->
         <scene sceneID="iPm-JH-2Tz">
             <objects>
-                <viewController storyboardIdentifier="LoginAndSignUpVC" id="G5t-FZ-KmP" customClass="LoginAndSignUpVC" customModule="coreDatatest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginAndSignUpVC" id="G5t-FZ-KmP" customClass="LoginAndSignUpVC" customModule="WareHouseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wnR-j1-CbV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +128,7 @@ Dreem Job Here</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHl-oz-2lL">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-h2-hFW">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfw-UK-37H">
                                                 <rect key="frame" x="20" y="0.0" width="354" height="70"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -139,11 +136,11 @@ Dreem Job Here</string>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="hh4-h2-hFW" secondAttribute="bottom" id="Apa-vg-3md"/>
-                                            <constraint firstItem="hh4-h2-hFW" firstAttribute="top" secondItem="uHl-oz-2lL" secondAttribute="top" id="N2N-8e-J1w"/>
+                                            <constraint firstItem="Qfw-UK-37H" firstAttribute="top" secondItem="uHl-oz-2lL" secondAttribute="top" id="2Wg-MG-Yhw"/>
+                                            <constraint firstItem="Qfw-UK-37H" firstAttribute="leading" secondItem="uHl-oz-2lL" secondAttribute="leading" constant="20" id="BJH-wZ-tO8"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qfw-UK-37H" secondAttribute="trailing" id="GyT-hh-th6"/>
                                             <constraint firstAttribute="height" constant="70" id="VMK-BI-g8d"/>
-                                            <constraint firstItem="hh4-h2-hFW" firstAttribute="leading" secondItem="uHl-oz-2lL" secondAttribute="leading" constant="20" id="ocW-3y-byd"/>
-                                            <constraint firstAttribute="trailing" secondItem="hh4-h2-hFW" secondAttribute="trailing" id="x5Z-MO-SNg"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qfw-UK-37H" secondAttribute="bottom" id="p1X-ax-jYC"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -154,7 +151,7 @@ Dreem Job Here</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaL-cB-TeV">
                                         <rect key="frame" x="0.0" y="80" width="374" height="70"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfw-UK-37H">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-h2-hFW">
                                                 <rect key="frame" x="20" y="0.0" width="354" height="70"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -162,10 +159,10 @@ Dreem Job Here</string>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Qfw-UK-37H" secondAttribute="trailing" id="5ti-TB-gji"/>
-                                            <constraint firstItem="Qfw-UK-37H" firstAttribute="leading" secondItem="QaL-cB-TeV" secondAttribute="leading" constant="20" id="8HJ-Dh-9t2"/>
-                                            <constraint firstItem="Qfw-UK-37H" firstAttribute="top" secondItem="QaL-cB-TeV" secondAttribute="top" id="GPe-6V-2vT"/>
-                                            <constraint firstAttribute="bottom" secondItem="Qfw-UK-37H" secondAttribute="bottom" id="Nqb-VC-EsN"/>
+                                            <constraint firstAttribute="trailing" secondItem="hh4-h2-hFW" secondAttribute="trailing" id="46Z-7n-TxK"/>
+                                            <constraint firstItem="hh4-h2-hFW" firstAttribute="top" secondItem="QaL-cB-TeV" secondAttribute="top" id="FD6-YP-Bk6"/>
+                                            <constraint firstItem="hh4-h2-hFW" firstAttribute="leading" secondItem="QaL-cB-TeV" secondAttribute="leading" constant="20" id="fpW-dZ-hf0"/>
+                                            <constraint firstAttribute="bottom" secondItem="hh4-h2-hFW" secondAttribute="bottom" id="pra-r6-AZC"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -352,7 +349,7 @@ Dreem Job Here</string>
         <!--Choose PageVC-->
         <scene sceneID="0WI-UO-lU3">
             <objects>
-                <viewController storyboardIdentifier="ChoosePageVC" id="G3p-Vv-rF4" customClass="ChoosePageVC" customModule="coreDatatest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChoosePageVC" id="G3p-Vv-rF4" customClass="ChoosePageVC" customModule="WareHouseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBz-0c-2zW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -450,7 +447,7 @@ Dreem Job Here</string>
         <!--Add ProductVC-->
         <scene sceneID="fq0-oW-Kjh">
             <objects>
-                <viewController storyboardIdentifier="AddProductVC" id="wc1-hQ-Fl8" customClass="AddProductVC" customModule="coreDatatest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddProductVC" id="wc1-hQ-Fl8" customClass="AddProductVC" customModule="WareHouseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q9C-zy-tmN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -459,26 +456,32 @@ Dreem Job Here</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OY-Av-yNl">
-                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.38039215686274508" blue="0.37647058823529411" alpha="0.25950804451443504" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="SFJ-1I-NA2"/>
+                                    <constraint firstAttribute="width" constant="50" id="SFJ-1I-NA2"/>
                                     <constraint firstAttribute="width" secondItem="8OY-Av-yNl" secondAttribute="height" multiplier="1:1" id="sdz-Xh-pS6"/>
                                 </constraints>
-                                <color key="tintColor" name="red"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="backHome:" destination="wc1-hQ-Fl8" eventType="touchUpInside" id="ffN-yC-kWy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6da-Bc-6yf">
-                                <rect key="frame" x="50" y="20" width="128.33333333333334" height="30"/>
+                                <rect key="frame" x="90.000000000000014" y="20" width="128.33333333333337" height="50"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Product Images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIO-Ze-WQG">
-                                <rect key="frame" x="20" y="110" width="154.66666666666666" height="20.333333333333343"/>
+                                <rect key="frame" x="20" y="130" width="154.66666666666666" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -503,13 +506,13 @@ Dreem Job Here</string>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M1-Sg-7m5">
-                                <rect key="frame" x="20" y="230.33333333333334" width="374" height="395.66666666666663"/>
+                                <rect key="frame" x="20" y="250.33333333333334" width="374" height="375.66666666666663"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZpV-IH-nyH">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="410"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nwT-zp-hlo">
-                                                <rect key="frame" x="0.0" y="10" width="374" height="390"/>
+                                                <rect key="frame" x="0.0" y="9.9999999999999716" width="374" height="390"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Msc-rD-Ipk">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
@@ -535,7 +538,7 @@ Dreem Job Here</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72X-cl-Dmz">
-                                                        <rect key="frame" x="0.0" y="79.999999999999972" width="374" height="70"/>
+                                                        <rect key="frame" x="0.0" y="80" width="374" height="70"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Product Info" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5hN-jE-Vl3">
                                                                 <rect key="frame" x="20" y="0.0" width="354" height="70"/>
@@ -557,7 +560,7 @@ Dreem Job Here</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGm-2f-4Tf">
-                                                        <rect key="frame" x="0.0" y="159.99999999999997" width="374" height="70"/>
+                                                        <rect key="frame" x="0.0" y="160" width="374" height="70"/>
                                                         <subviews>
                                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Meal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYv-QA-imF">
                                                                 <rect key="frame" x="20" y="0.0" width="314" height="70"/>
@@ -665,7 +668,7 @@ Dreem Job Here</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1j-aB-Bgx">
-                                                        <rect key="frame" x="0.0" y="320" width="374" height="70"/>
+                                                        <rect key="frame" x="0.0" y="320.00000000000006" width="374" height="70"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fv-bw-JiG">
                                                                 <rect key="frame" x="20" y="0.0" width="314" height="70"/>
@@ -741,7 +744,7 @@ Dreem Job Here</string>
                                 </constraints>
                             </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RVv-Yw-LAr">
-                                <rect key="frame" x="20" y="130.33333333333334" width="394" height="100"/>
+                                <rect key="frame" x="20" y="150.33333333333334" width="394" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="4H9-K7-RzE"/>
@@ -785,7 +788,7 @@ Dreem Job Here</string>
                             <constraint firstItem="6da-Bc-6yf" firstAttribute="top" secondItem="8OY-Av-yNl" secondAttribute="top" id="bZ7-Zt-SGB"/>
                             <constraint firstItem="EJW-16-s3s" firstAttribute="trailing" secondItem="sX9-HL-ctE" secondAttribute="trailing" id="dMF-Yu-qJb"/>
                             <constraint firstItem="KIO-Ze-WQG" firstAttribute="top" secondItem="8OY-Av-yNl" secondAttribute="bottom" constant="60" id="fjY-kr-cWd"/>
-                            <constraint firstItem="6da-Bc-6yf" firstAttribute="leading" secondItem="8OY-Av-yNl" secondAttribute="trailing" id="l9Z-0F-d90"/>
+                            <constraint firstItem="6da-Bc-6yf" firstAttribute="leading" secondItem="8OY-Av-yNl" secondAttribute="trailing" constant="20" id="l9Z-0F-d90"/>
                             <constraint firstItem="8OY-Av-yNl" firstAttribute="leading" secondItem="sX9-HL-ctE" secondAttribute="leading" constant="20" id="rrQ-5d-xbD"/>
                             <constraint firstItem="EJW-16-s3s" firstAttribute="top" secondItem="q9C-zy-tmN" secondAttribute="top" id="u1l-IH-jhk"/>
                             <constraint firstItem="sX9-HL-ctE" firstAttribute="trailing" secondItem="RVv-Yw-LAr" secondAttribute="trailing" id="yhn-iZ-NwK"/>
@@ -807,7 +810,7 @@ Dreem Job Here</string>
         <!--Search For Meal-->
         <scene sceneID="mEU-2A-MHt">
             <objects>
-                <viewController storyboardIdentifier="SearchForMeal" id="LPI-gS-wKt" customClass="SearchForMeal" customModule="coreDatatest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchForMeal" id="LPI-gS-wKt" customClass="SearchForMeal" customModule="WareHouseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mSt-Le-8mz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -815,109 +818,14 @@ Dreem Job Here</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="UwK-af-bAQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to eat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nJ-d3-cEH">
-                                <rect key="frame" x="20" y="40.000000000000007" width="374" height="107.66666666666669"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore the warehouse" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nJ-d3-cEH">
+                                <rect key="frame" x="20" y="60.000000000000007" width="374" height="107.66666666666669"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uRM-Qh-cML">
-                                <rect key="frame" x="20" y="178.66666666666666" width="394" height="99.999999999999972"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="bGy-pg-QpZ"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qnP-Qs-t46">
-                                    <size key="itemSize" width="70" height="90"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mealCollectionViewCell" id="qdW-CT-vLK" customClass="mealCollectionViewCell" customModule="coreDatatest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="5" width="140" height="90"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="odb-nE-ppv">
-                                            <rect key="frame" x="0.0" y="0.0" width="140" height="90"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg4-Nr-5Bh">
-                                                    <rect key="frame" x="49" y="34.666666666666664" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Mg4-Nr-5Bh" firstAttribute="centerY" secondItem="odb-nE-ppv" secondAttribute="centerY" id="aV1-dp-GXX"/>
-                                                <constraint firstItem="Mg4-Nr-5Bh" firstAttribute="centerX" secondItem="odb-nE-ppv" secondAttribute="centerX" id="rtR-Ti-3ll"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="140" height="90"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="mealNameLbl" destination="Mg4-Nr-5Bh" id="uLZ-hd-q90"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOf-b2-A2m">
-                                <rect key="frame" x="40" y="152.66666666666666" width="54" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P0D-D5-gBx">
-                                <rect key="frame" x="20" y="278.66666666666669" width="394" height="80"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="jhk-8T-Q4i"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qzk-NZ-qdT">
-                                    <size key="itemSize" width="92" height="58"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemsCollectionViewCell" id="dJS-gb-QZW" customClass="itemsCollectionViewCell" customModule="coreDatatest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="11" width="92" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hst-RF-frP">
-                                            <rect key="frame" x="0.0" y="0.0" width="92" height="58"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3D-3h-aax">
-                                                    <rect key="frame" x="25" y="18.666666666666668" width="42" height="21.000000000000004"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="l3D-3h-aax" firstAttribute="centerX" secondItem="hst-RF-frP" secondAttribute="centerX" id="Zcv-aH-Nwz"/>
-                                                <constraint firstItem="l3D-3h-aax" firstAttribute="centerY" secondItem="hst-RF-frP" secondAttribute="centerY" id="prP-YK-eO2"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="92" height="58"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="itemsLbl" destination="l3D-3h-aax" id="9ex-oG-qHp"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ora-pw-rPg">
-                                <rect key="frame" x="20" y="368.66666666666674" width="374" height="367.33333333333326"/>
+                                <rect key="frame" x="20" y="371.66666666666674" width="374" height="364.33333333333326"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yt5-ox-gK1">
                                     <size key="itemSize" width="128" height="128"/>
@@ -937,17 +845,140 @@ Dreem Job Here</string>
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBK-Ps-RK4">
-                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.3803921569" blue="0.37647058820000001" alpha="0.25950804449999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LBK-Ps-RK4" secondAttribute="height" multiplier="1:1" id="hbN-hn-uZQ"/>
-                                    <constraint firstAttribute="width" constant="30" id="uUQ-OW-oUw"/>
+                                    <constraint firstAttribute="width" constant="50" id="uUQ-OW-oUw"/>
                                 </constraints>
-                                <color key="tintColor" name="red"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="backHome:" destination="wc1-hQ-Fl8" eventType="touchUpInside" id="V6X-PV-ZNS"/>
                                     <action selector="goBack:" destination="LPI-gS-wKt" eventType="touchUpInside" id="lDZ-q9-bUc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeU-aj-kLQ">
+                                <rect key="frame" x="20" y="172.66666666666666" width="69.333333333333329" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-61-N8o">
+                                <rect key="frame" x="20" y="201.66666666666663" width="394" height="160"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uRM-Qh-cML">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Zyg-bR-ALj"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qnP-Qs-t46">
+                                            <size key="itemSize" width="70" height="90"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mealCollectionViewCell" id="qdW-CT-vLK" customClass="mealCollectionViewCell" customModule="WareHouseApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="5" width="140" height="90"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="odb-nE-ppv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="90"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg4-Nr-5Bh">
+                                                            <rect key="frame" x="49.333333333333329" y="35" width="41.333333333333329" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Mg4-Nr-5Bh" firstAttribute="centerY" secondItem="odb-nE-ppv" secondAttribute="centerY" id="aV1-dp-GXX"/>
+                                                        <constraint firstItem="Mg4-Nr-5Bh" firstAttribute="centerX" secondItem="odb-nE-ppv" secondAttribute="centerX" id="rtR-Ti-3ll"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="customSize" width="140" height="90"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="mealNameLbl" destination="Mg4-Nr-5Bh" id="uLZ-hd-q90"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P0D-D5-gBx">
+                                        <rect key="frame" x="0.0" y="100.00000000000003" width="394" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="P4M-4q-9at"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qzk-NZ-qdT">
+                                            <size key="itemSize" width="92" height="58"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemsCollectionViewCell" id="dJS-gb-QZW" customClass="itemsCollectionViewCell" customModule="WareHouseApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1" width="92" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hst-RF-frP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="58"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3D-3h-aax">
+                                                            <rect key="frame" x="25.333333333333332" y="19" width="41.333333333333343" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="l3D-3h-aax" firstAttribute="centerX" secondItem="hst-RF-frP" secondAttribute="centerX" id="Zcv-aH-Nwz"/>
+                                                        <constraint firstItem="l3D-3h-aax" firstAttribute="centerY" secondItem="hst-RF-frP" secondAttribute="centerY" id="prP-YK-eO2"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="92" height="58"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="itemsLbl" destination="l3D-3h-aax" id="9ex-oG-qHp"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqh-lv-6Qi">
+                                <rect key="frame" x="265" y="167.66666666666666" width="129" height="34"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.3803921569" blue="0.37647058820000001" alpha="0.15042821617451366" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Delete Product">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showDeleteBtn:" destination="LPI-gS-wKt" eventType="touchUpInside" id="bsb-Pn-B0q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -955,27 +986,27 @@ Dreem Job Here</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LBK-Ps-RK4" firstAttribute="width" secondItem="LBK-Ps-RK4" secondAttribute="height" multiplier="1:1" id="1DQ-NI-hQ7"/>
-                            <constraint firstItem="uRM-Qh-cML" firstAttribute="top" secondItem="rOf-b2-A2m" secondAttribute="bottom" constant="5" id="2zi-Ma-duU"/>
-                            <constraint firstItem="3MB-bK-GLk" firstAttribute="trailing" secondItem="uRM-Qh-cML" secondAttribute="trailing" id="4RF-mW-K0w"/>
+                            <constraint firstItem="BeU-aj-kLQ" firstAttribute="leading" secondItem="1nJ-d3-cEH" secondAttribute="leading" id="5NF-Cz-Fx3"/>
                             <constraint firstItem="3MB-bK-GLk" firstAttribute="bottom" secondItem="ora-pw-rPg" secondAttribute="bottom" id="8ve-hq-s6Z"/>
+                            <constraint firstItem="ora-pw-rPg" firstAttribute="top" secondItem="3d5-61-N8o" secondAttribute="bottom" constant="10" id="CJT-4N-rSv"/>
                             <constraint firstItem="LBK-Ps-RK4" firstAttribute="leading" secondItem="3MB-bK-GLk" secondAttribute="leading" constant="20" id="CRS-M6-PDZ"/>
-                            <constraint firstItem="uRM-Qh-cML" firstAttribute="leading" secondItem="1nJ-d3-cEH" secondAttribute="leading" id="EMH-7b-Khh"/>
+                            <constraint firstItem="Aqh-lv-6Qi" firstAttribute="top" secondItem="1nJ-d3-cEH" secondAttribute="bottom" id="DrY-Vf-mbh"/>
+                            <constraint firstItem="Aqh-lv-6Qi" firstAttribute="trailing" secondItem="1nJ-d3-cEH" secondAttribute="trailing" id="F02-E4-MDk"/>
+                            <constraint firstItem="BeU-aj-kLQ" firstAttribute="top" secondItem="1nJ-d3-cEH" secondAttribute="bottom" constant="5" id="FLy-XC-Yqc"/>
                             <constraint firstItem="3MB-bK-GLk" firstAttribute="trailing" secondItem="1nJ-d3-cEH" secondAttribute="trailing" constant="20" id="Ftz-hc-nbd"/>
                             <constraint firstItem="UwK-af-bAQ" firstAttribute="leading" secondItem="3MB-bK-GLk" secondAttribute="leading" id="Ge6-Xb-jd7"/>
-                            <constraint firstItem="P0D-D5-gBx" firstAttribute="top" secondItem="uRM-Qh-cML" secondAttribute="bottom" id="Im7-4f-ixl"/>
-                            <constraint firstItem="P0D-D5-gBx" firstAttribute="leading" secondItem="uRM-Qh-cML" secondAttribute="leading" id="KAy-Q6-zyR"/>
                             <constraint firstItem="LBK-Ps-RK4" firstAttribute="top" secondItem="3MB-bK-GLk" secondAttribute="top" constant="20" id="Vd7-o9-DgK"/>
-                            <constraint firstItem="rOf-b2-A2m" firstAttribute="leading" secondItem="1nJ-d3-cEH" secondAttribute="leading" constant="20" id="WCf-u1-QeQ"/>
                             <constraint firstItem="3MB-bK-GLk" firstAttribute="trailing" secondItem="ora-pw-rPg" secondAttribute="trailing" constant="20" id="WU5-VN-xk1"/>
                             <constraint firstItem="UwK-af-bAQ" firstAttribute="trailing" secondItem="3MB-bK-GLk" secondAttribute="trailing" id="agC-7Z-74P"/>
-                            <constraint firstItem="ora-pw-rPg" firstAttribute="top" secondItem="P0D-D5-gBx" secondAttribute="bottom" constant="10" id="eto-9x-Qlf"/>
-                            <constraint firstItem="P0D-D5-gBx" firstAttribute="trailing" secondItem="uRM-Qh-cML" secondAttribute="trailing" id="fBl-EW-XkE"/>
+                            <constraint firstItem="3d5-61-N8o" firstAttribute="leading" secondItem="BeU-aj-kLQ" secondAttribute="leading" id="eZ0-p4-zQd"/>
                             <constraint firstAttribute="bottom" secondItem="UwK-af-bAQ" secondAttribute="bottom" id="hyB-fg-jwh"/>
                             <constraint firstItem="1nJ-d3-cEH" firstAttribute="leading" secondItem="3MB-bK-GLk" secondAttribute="leading" constant="20" id="jDO-Qb-5Gr"/>
+                            <constraint firstItem="3d5-61-N8o" firstAttribute="trailing" secondItem="3MB-bK-GLk" secondAttribute="trailing" id="ni9-YN-cKR"/>
                             <constraint firstItem="UwK-af-bAQ" firstAttribute="top" secondItem="mSt-Le-8mz" secondAttribute="top" id="ogW-aq-6dx"/>
-                            <constraint firstItem="1nJ-d3-cEH" firstAttribute="top" secondItem="3MB-bK-GLk" secondAttribute="top" constant="40" id="pE2-UK-em3"/>
+                            <constraint firstItem="1nJ-d3-cEH" firstAttribute="top" secondItem="3MB-bK-GLk" secondAttribute="top" constant="60" id="pE2-UK-em3"/>
+                            <constraint firstItem="3d5-61-N8o" firstAttribute="top" secondItem="Aqh-lv-6Qi" secondAttribute="bottom" id="s0A-eY-bQ1"/>
                             <constraint firstItem="ora-pw-rPg" firstAttribute="leading" secondItem="3MB-bK-GLk" secondAttribute="leading" constant="20" id="tkS-AS-0ko"/>
-                            <constraint firstItem="rOf-b2-A2m" firstAttribute="top" secondItem="1nJ-d3-cEH" secondAttribute="bottom" constant="5" id="ypF-SV-JuH"/>
+                            <constraint firstItem="3d5-61-N8o" firstAttribute="top" secondItem="BeU-aj-kLQ" secondAttribute="bottom" id="y58-hC-GST"/>
                         </constraints>
                     </view>
                     <connections>
@@ -986,7 +1017,7 @@ Dreem Job Here</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBi-R8-rmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3117" y="-2"/>
+            <point key="canvasLocation" x="3115.9420289855075" y="-2.4456521739130435"/>
         </scene>
     </scenes>
     <resources>
@@ -995,9 +1026,6 @@ Dreem Job Here</string>
         <image name="chevron.down.square" catalog="system" width="128" height="114"/>
         <image name="chevron.up.square.fill" catalog="system" width="128" height="114"/>
         <image name="landing_img" width="393" height="408"/>
-        <namedColor name="red">
-            <color red="0.85882352941176465" green="0.38039215686274508" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

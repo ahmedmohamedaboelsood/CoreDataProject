@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductsCollectionViewCell" id="gTV-IL-0wX" customClass="ProductsCollectionViewCell" customModule="WareHouseApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-G7-e4o">
+                        <rect key="frame" x="0.0" y="0.0" width="207" height="226"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eh3-c8-dpg">
+                                <rect key="frame" x="10" y="10" width="187" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="q46-QR-vfu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-CA-eXp">
+                                <rect key="frame" x="15" y="140" width="182" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7k-MG-L3f">
+                                <rect key="frame" x="15.000000000000004" y="169" width="35.333333333333343" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctv-de-Qgw">
+                                <rect key="frame" x="15" y="192" width="182" height="19"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <color key="textColor" name="red"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCr-tC-cWG">
+                                <rect key="frame" x="161.66666666666666" y="169" width="35.333333333333343" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5d-ZI-uKJ">
+                                <rect key="frame" x="182" y="0.0" width="25" height="25"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="minusBtn"/>
+                                <connections>
+                                    <action selector="deleteProduct:" destination="gTV-IL-0wX" eventType="touchUpInside" id="YRg-0E-0N3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xCr-tC-cWG" firstAttribute="trailing" secondItem="eh3-c8-dpg" secondAttribute="trailing" id="6TM-r7-gaI"/>
+                            <constraint firstAttribute="bottom" secondItem="ctv-de-Qgw" secondAttribute="bottom" constant="15" id="7No-ta-CKP"/>
+                            <constraint firstItem="ctv-de-Qgw" firstAttribute="leading" secondItem="Kxc-CA-eXp" secondAttribute="leading" id="7ei-0f-Lbx"/>
+                            <constraint firstItem="Kxc-CA-eXp" firstAttribute="trailing" secondItem="eh3-c8-dpg" secondAttribute="trailing" id="7fJ-nh-Tda"/>
+                            <constraint firstItem="eh3-c8-dpg" firstAttribute="top" secondItem="jc3-G7-e4o" secondAttribute="top" constant="10" id="CJt-c8-lZo"/>
+                            <constraint firstItem="ctv-de-Qgw" firstAttribute="trailing" secondItem="Kxc-CA-eXp" secondAttribute="trailing" id="Dca-nE-dtT"/>
+                            <constraint firstItem="Q5d-ZI-uKJ" firstAttribute="top" secondItem="eh3-c8-dpg" secondAttribute="top" constant="-10" id="EPz-WK-uzL"/>
+                            <constraint firstItem="eh3-c8-dpg" firstAttribute="centerX" secondItem="jc3-G7-e4o" secondAttribute="centerX" id="GpU-8s-U8d"/>
+                            <constraint firstItem="Q5d-ZI-uKJ" firstAttribute="trailing" secondItem="eh3-c8-dpg" secondAttribute="trailing" constant="10" id="JnX-Qe-cMU"/>
+                            <constraint firstItem="ctv-de-Qgw" firstAttribute="centerX" secondItem="Kxc-CA-eXp" secondAttribute="centerX" id="NXi-4R-F3M"/>
+                            <constraint firstItem="g7k-MG-L3f" firstAttribute="top" secondItem="Kxc-CA-eXp" secondAttribute="bottom" constant="5" id="S7p-m4-QYh"/>
+                            <constraint firstItem="xCr-tC-cWG" firstAttribute="centerY" secondItem="g7k-MG-L3f" secondAttribute="centerY" id="XS3-y1-DSy"/>
+                            <constraint firstItem="g7k-MG-L3f" firstAttribute="leading" secondItem="Kxc-CA-eXp" secondAttribute="leading" id="YUV-yq-FPN"/>
+                            <constraint firstItem="eh3-c8-dpg" firstAttribute="leading" secondItem="jc3-G7-e4o" secondAttribute="leading" constant="10" id="dyG-Yc-8aH"/>
+                            <constraint firstItem="Kxc-CA-eXp" firstAttribute="top" secondItem="eh3-c8-dpg" secondAttribute="bottom" constant="10" id="fdX-YA-0E5"/>
+                            <constraint firstAttribute="trailing" secondItem="eh3-c8-dpg" secondAttribute="trailing" constant="10" id="n35-Ye-1tl"/>
+                            <constraint firstItem="Kxc-CA-eXp" firstAttribute="leading" secondItem="eh3-c8-dpg" secondAttribute="leading" constant="5" id="vMu-aO-Dwd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jc3-G7-e4o" secondAttribute="bottom" id="1P3-Xa-ya8"/>
+                <constraint firstItem="jc3-G7-e4o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MJN-10-yPT"/>
+                <constraint firstItem="jc3-G7-e4o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SLE-lE-QM1"/>
+                <constraint firstAttribute="trailing" secondItem="jc3-G7-e4o" secondAttribute="trailing" id="hna-DH-iqd"/>
+            </constraints>
+            <size key="customSize" width="207" height="226"/>
+            <connections>
+                <outlet property="deleteProductBtn" destination="Q5d-ZI-uKJ" id="v12-vx-Zjm"/>
+                <outlet property="productImage" destination="eh3-c8-dpg" id="pRE-ug-Bdv"/>
+                <outlet property="productItem" destination="xCr-tC-cWG" id="HGo-rp-k6P"/>
+                <outlet property="productMeal" destination="ctv-de-Qgw" id="cMS-aO-zNn"/>
+                <outlet property="productName" destination="Kxc-CA-eXp" id="ZJ1-zb-FaN"/>
+                <outlet property="productPrice" destination="g7k-MG-L3f" id="erZ-H8-vYy"/>
+            </connections>
+            <point key="canvasLocation" x="232.82442748091603" y="85.91549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="minusBtn" width="25" height="25"/>
+        <namedColor name="red">
+            <color red="0.85882352941176465" green="0.38039215686274508" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
